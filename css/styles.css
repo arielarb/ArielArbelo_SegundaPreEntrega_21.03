@@ -25,7 +25,7 @@ body {
 }
 
 .titulo-header {
-  /* Estilo para slogan del comercio (porque el nombre ya aparece en logos) "todo para tu jardín, en un solo lugar"*/
+  /* Estilo para slogan del comercio "todo para tu jardín, en un solo lugar"*/
   color: green;
   text-align: center;
   font-size: x-large;
@@ -305,7 +305,7 @@ h2 {
   padding: 10px 10px;
 }
 
-/* Diferentes colores de fondo para las secciones en index.html"*/
+/* Diferentes fondos para las secciones en index.html"*/
 #Vivero {
   background-image: url(/media/fondo1.jpeg);
   background-attachment: fixed;
