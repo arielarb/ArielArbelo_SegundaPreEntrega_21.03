@@ -35,7 +35,7 @@ body {
   font-family: "Dosis";
 }
 
-/*Estilos del carrusel*/
+/*Estilos del carrusel desde bootstrap*/
 .carousel {
   position: relative;
 }
@@ -262,7 +262,7 @@ body {
   white-space: nowrap !important;
   border: 0 !important;
 }
-/*Cierre estilos carrusel*/
+/*Cierre estilos carrusel desde bootstrap*/*/
 
 div {
   margin: 20px;
