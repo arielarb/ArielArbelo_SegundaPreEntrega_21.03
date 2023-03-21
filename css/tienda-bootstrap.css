@@ -1,0 +1,191 @@
+* {
+  /* estilos genericos */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Pompiere";
+  src: url("/fonts/Pompiere-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("/fonts/Dosis-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "Pompiere";
+}
+
+.col p, p, figcaption {
+  font-family: "Dosis";
+}
+
+main{
+  margin: 0;
+}
+
+
+div {
+  align-items: center;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: rgb(250, 250, 250);
+  opacity: 100%;
+  z-index: 10;
+}
+
+.nav-item {
+  padding: 0px 1.2em 0px 1.2em;
+  font-size: 1.3em;
+  display: inline-block;
+}
+
+#check-menu,
+label.menu {
+  display: none;
+}
+
+
+h2 {
+  /* Estilo para títulos de secciones*/
+  color: green;
+  text-align: center;
+  background-color: rgb(43, 233, 128);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.3em;
+  color: rgb(122, 122, 243);
+}
+
+a:active{
+background-color: rgb(129, 233, 190);
+}
+
+a:visited{
+background-color: color: rgb(1, 1, 87);
+}
+
+.boton-inicio {
+  padding: 15px;
+}
+
+footer {
+  height: 5rem;
+}
+
+footer ul {
+  align-items: start;
+  font-size: small;
+}
+
+footer span {
+  width: 40%;
+  font-family: "Dosis";
+  font-weight: lighter;
+  font-size: small;
+  justify-content: end;
+}
+
+h3, h4 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.imagenCategorias {
+  border-width: 4px;
+  border-color: rgba(139, 85, 2, 0.548);
+  border-style: groove;
+  border-radius: 5px;
+}
+
+.imagenCategorias:hover {
+  opacity: 40%;
+}
+
+.imagenCategorias {
+  width: 80%;
+  }
+
+@media (max-width: 711px) {
+  .navbar ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 30%;
+    height: 150px;
+    flex-direction: column
+    justify-content: space-around;
+    background-color: rgb(250, 250, 250);
+  }
+  
+  label.menu {
+    display: block;
+    font-size: 1.7em;
+    color: lightgreen;
+    cursor: pointer;
+  }
+  
+  #check-menu:checked ~ ul {
+    display: block;
+    flex-direction: column;
+  }
+
+  footer span {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar ul {
+    width: 40%;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar ul {
+    width: 70%;
+  }
+}
+
+.col {
+  display: inline-block;
+  text-align: center;
+}
+
+figcaption{
+  font-size: medium;
+}
+
+main{
+  background-image: url(/media/fondo3.jpeg);
+  background-attachment: fixed; 
+  background-repeat: repeat;
+  column-gap: 20px;
+  row-gap: 20px;
+}

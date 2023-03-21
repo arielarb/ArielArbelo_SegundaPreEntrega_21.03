@@ -1,0 +1,126 @@
+#Vivero p {
+  text-align: center;
+  font-size: larger;
+  margin: 10px;
+}
+
+#Vivero {
+  padding-bottom: 3%;
+}
+
+main {
+  background-color: rgb(117, 248, 176);
+}
+
+.aviso {
+  background-color: rgb(2, 92, 2);
+  color: white;
+  padding: 4px;
+  border-radius: 3px;
+  border: 3px solid;
+  border-color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 200px 380px 300px;
+  grid-template-areas:
+    "header header"
+    "article1 article2"
+    "side article3";
+  column-gap: 3px;
+  row-gap: 3px;
+  background-image: url(/media/fondo1.jpeg);
+  background-attachment: fixed;
+}
+
+#Vivero {
+  grid-area: header;
+  display: flex-column;
+}
+
+#plantas-de-interior {
+  grid-area: article1;
+}
+
+#plantas-de-exterior {
+  grid-area: article2;
+}
+
+#semillas-y-plantines {
+  grid-area: side;
+}
+
+#fertilizantes-y-otro-insumos {
+  grid-area: article3;
+}
+
+.grid-item {
+  display: inline-block;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: x-large;
+}
+
+#plantas-de-exterior,
+#plantas-de-interior {
+  text-align: center;
+}
+
+div img {
+  width: 100%;
+}
+
+.img-grid {
+  border-width: 4px;
+  border-color: rgba(139, 85, 2, 0.548);
+  border-style: groove;
+  border-radius: 5px;
+  width: 70%;
+  margin: 10px;
+  align-items: center;
+}
+
+p {
+  font-family: "Dosis";
+}
+
+@media (max-width: 735px) {
+  .grid-container {
+    grid-template-rows: 250px 300px 450px;
+    column-gap: 2px;
+    row-gap: 2px;
+  }
+}
+
+@media (max-width: 405px) {
+  .grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 300px 300px 380px 300px;
+    grid-template-areas:
+      "header"
+      "article1"
+      "article2"
+      "side"
+      "article3";
+    column-gap: 1px;
+    row-gap: 1px;
+  }
+}
+
+@media (max-width: 342px) {
+  .grid-container {
+    grid-template-rows: 360px 300px 300px 450px 400px;
+  }
+
+  header {
+    font-size: small;
+  }
+}

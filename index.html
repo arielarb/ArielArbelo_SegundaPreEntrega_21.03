@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Vivero La Chichy</title>
+    <meta
+      name="description"
+      content="Todo para tu jardín, en un solo lugar. Plantas interior y exterior. Plantines. Semillas. Macetas. Decoración. Herramientas. Fertilizantes. Asesoramiento."/>
+    <link rel="icon" href="Media/Logo.PNG" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/estilos.css" />
+  </head>
+
+  <body>
+    <nav class="navbar"> <!--Menú de navegación - los links de este navbar dirigen a contenidos internos del index.html vía ID-->
+      <input type="checkbox" id="check-menu">
+      <label for="check-menu" class="menu"><i class='bx bx-menu bx-border'></i></label>
+      <img src="Media/Logo.PNG" width="70" />
+      <ul>
+        <li class="nav-item active"><a href="index.html#Inicio">Inicio</a></li>
+        <li class="nav-item"><a href="index.html#Vivero">Vivero</a></li>
+        <li class="nav-item"><a href="index.html#Tienda">Tienda</a></li>
+        <li class="nav-item"><a href="index.html#Servicios">Servicios</a></li>
+        <li class="nav-item"><a href="index.html#Contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <header>
+<!--Código del carrusel-->
+      <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <section class="carousel-inner">
+    <section class="carousel-item active" data-bs-interval="10000">
+      <img src="Media/carrusel1.jpeg" class="d-block w-100" alt="...">
+    </section>
+    <section class="carousel-item" data-bs-interval="2000">
+      <img src="Media/carrusel2.jpeg" class="d-block w-100" alt="...">
+    </section>
+    <section class="carousel-item">
+      <img src="Media/carrusel3.jpeg" class="d-block w-100" alt="...">
+    </section>
+  </section>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+    <p class="titulo-header">Todo para tu jardín, en un solo lugar</p>
+    </header>
+
+    <section id="Vivero"> <!-- Primera de las 4 secciones en index.html - Sus links dirigen a la página vivero.html y a IDs dentro de esta página -->
+      <h2><a href="vivero.html">Vivero</a></h2>
+      <Article>
+        <div>
+        <a href="vivero.html#plantas-de-interior"><img src="Media/plantas interior.jpg" alt="plantas-de-interior" class="imagenCategorias"/></a>
+        <h3><a href="vivero.html#plantas-de-interior">Plantas de interior</a></h3>
+        <a href="vivero.html#plantas-de-exterior"><img src="Media/plantas exterior.jpg" alt="plantas-de-exterior" class="imagenCategorias"/></a>
+        <h3><a href="vivero.html#plantas-de-exterior">Plantas de exterior</a></h3>
+      </div>
+      <div>
+        <a href="vivero.html#semillas-y-plantines"><img src="Media/semillas y plantines.jpeg" alt="semillas-y-plantines" class="imagenCategorias"/></a>
+        <h3><a href="vivero.html#semillas-y-plantines">Semillas y plantines</a></h3>
+        <a href="vivero.html#fertilizantes-y-otro-insumos"><img src="Media/fertilizantes y otros insumos.jpg" alt="fertilizantes-y-otros-insumos" class="imagenCategorias"/></a>
+        <h3><a href="vivero.html#fertilizantes-y-otro-insumos">Fertilizantes y otros insumos</a></h3>
+      </div>
+      </Article>
+      <article class="boton-inicio"><a href="index.html#Inicio">🔼 Inicio</a></article>
+    </section>
+    
+    <section id="Tienda"> <!--Segunda de las 4 secciones en index.html - Sus links dirigen a la página tienda.html y a IDs dentro de esta página -->
+      <h2><a href="tienda.html">Tienda</a></h2>
+      <article>
+      <div>
+        <a href="tienda.html#decoracion"><img src="Media/decoracion.jpg" alt="decoracion" class="imagenCategorias" /></a>
+        <h3><a href="tienda.html#decoracion">Decoración</a></h3>
+      </div> 
+      <div>
+        <a href="tienda.html#herramientas"><img src="Media/herramientas.jpg" alt="herramientas" class="imagenCategorias"></a>
+        <h3><a href="tienda.html#herramientas">Herramientas</h3></a>
+      </div>
+      </article>
+    <article class="boton-inicio"><a href="index.html#Inicio">🔼 Inicio</a></article>
+    </section>
+    
+    <section id="Servicios"> <!-- Tercera de las 4 secciones en index.html - No contiene links -->
+      <h2>Servicios</h2>
+      <article>
+      <div class="Servicios">
+        <i class='bx bx-landscape icon-serv'></i>
+        <h3>Paisajismo</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi sint in
+          nulla molestiae! In repellat nulla ipsum ea minus quod, ipsam minima
+          deserunt pariatur soluta fugiat labore earum modi quis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa incidunt nisi nihil, reiciendis quibusdam laboriosam eum vitae minima asperiores optio repudiandae esse quo enim quas architecto suscipit. Dolore, esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorum dolore quibusdam ab ipsum sunt cupiditate obcaecati autem necessitatibus illum, sed laudantium est a aliquam? Harum atque nisi doloremque perferendis.
+        </p>
+      </div>
+      
+      <div class="Servicios"> 
+        <i class='bx bxs-comment-dots icon-serv'></i>
+        <h3>Asesoramiento</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi sint in
+          nulla molestiae! In repellat nulla ipsum ea minus quod, ipsam minima
+          deserunt pariatur soluta fugiat labore earum modi quis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa incidunt nisi nihil, reiciendis quibusdam laboriosam eum vitae minima asperiores optio repudiandae esse quo enim quas architecto suscipit. Dolore, esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorum dolore quibusdam ab ipsum sunt cupiditate obcaecati autem necessitatibus illum, sed laudantium est a aliquam? Harum atque nisi doloremque perferendis.
+        </p>
+      </div>
+      </article>
+    <article class="boton-inicio"><a href="index.html#Inicio">🔼 Inicio</a></article>
+    </section>
+    
+    <section id="Contacto"> <!--Última de las 4 secciones en index.html-->
+      <h2>Contacto</h2>
+      <br />
+      <article class="contactoMedia">
+      <div class="Contacto-hijo"><h3>Visitanos</h3>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1731.1720661798417!2d-58.086180077183755!3d-29.796600838137614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945293f97b02061f%3A0x62c03f01755dbcb0!2sLa%20Chichy%20Vivero%20y%20Tienda%20de%20Jardiner%C3%ADa!5e0!3m2!1ses-419!2sar!4v1666610713368!5m2!1ses-419!2sar"
+        width="300"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      </div>
+      <div class="Contacto-hijo">
+        <h3>Seguinos</h3>
+      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02HLcLbDzcHS3CLxNiQAaP8pVETULXkY4xoXprgDgTxNyL3TqhVvDLau5TqfAQTuujl%26id%3D100076292104306&show_text=true&width=500" width="300" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
+      <div class="Contacto-hijo">
+      <h3>Escribinos</h4>
+       <!-- https://formsubmit.co/ es un servicio gratuito de gestión de formularios web. La información que usuarios colocan la dirige al mail que se especifica, en este caso a mi mail personal de la siguiente línea-->
+        <form action="https://formsubmit.co/arielarbelo@hotmail.com" method="POST">
+         <input
+          type="text"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+          pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+          title="Solo acepta letras y espacios en blanco"
+          required
+          />
+       <br />
+        <input
+          type="email"
+          name="correo"
+          placeholder="Escribe tu correo"
+          pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+          title="Formato de correo inválido"
+          required
+          />
+       <br />
+        <textarea
+          name="comentarios"
+          cols="30"
+          rows="10"
+          placeholder="Escribe tu consulta"
+          required
+        ></textarea>
+      <br />
+      <input type="submit" />
+    </form>
+    <br>
+    <span class="contacto-whatsapp">
+      <a href="https://wa.me/00543774442756"><img src="media/logo whatsapp.jpg" alt="logo de whatsapp" width="20"> <b> +5493774442756</b></a>
+    </span>
+  </div>
+  </article>
+  <article class="boton-inicio"><a href="index.html#Inicio">🔼 Inicio</a></article>
+  </section>
+
+  <footer class="navbar" align-items="center"> 
+      <ul>
+        <li class="nav-item active"><a href="index.html#Inicio">Inicio</a></li>
+        <li class="nav-item"><a href="index.html#Vivero">Vivero</a></li>
+        <li class="nav-item"><a href="index.html#Tienda">Tienda</a></li>
+        <li class="nav-item"><a href="index.html#Servicios">Servicios</a></li>
+        <li class="nav-item"><a href="index.html#Contacto">Contacto</a></li>
+      </ul>
+      <span>Ruta 119, km. 32.2, C.P.: 3460 | Curuzú Cuatiá, Corrientes, Argentina. <br>2023 Vivero La Chichy. All Rights Reserved </span>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

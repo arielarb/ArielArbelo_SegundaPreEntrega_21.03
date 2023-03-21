@@ -1,0 +1,513 @@
+* {
+  /* estilos genericos */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Pompiere";
+  src: url("/fonts/Pompiere-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("/fonts/Dosis-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "Pompiere";
+}
+
+.titulo-header {
+  /* Estilo para slogan del comercio (porque el nombre ya aparece en logos) "todo para tu jardín, en un solo lugar"*/
+  color: green;
+  text-align: center;
+  font-size: x-large;
+  font-style: italic;
+  background-color: rgb(250, 250, 250);
+  padding: 15px;
+  font-family: "Dosis";
+}
+
+/*Estilos del carrusel*/
+.carousel {
+  position: relative;
+}
+
+.carousel.pointer-event {
+  touch-action: pan-y;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-item {
+    transition: none;
+  }
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end {
+  transform: translateX(100%);
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start {
+  transform: translateX(-100%);
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  transform: none;
+}
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+  z-index: 1;
+  opacity: 1;
+}
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0s 0.6s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    transition: none;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    transition: none;
+  }
+}
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+/* rtl:options: {
+  "autoRename": true,
+  "stringMap":[ {
+    "name"    : "prev-next",
+    "search"  : "prev",
+    "replace" : "next"
+  } ]
+} */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-indicators [data-bs-target] {
+    transition: none;
+  }
+}
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-dark .carousel-control-prev-icon,
+.carousel-dark .carousel-control-next-icon {
+  filter: invert(1) grayscale(100);
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
+.carousel-dark .carousel-caption {
+  color: #000;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+/*Cierre estilos carrusel*/
+
+div {
+  margin: 20px;
+  padding: 6px;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: rgb(250, 250, 250);
+  opacity: 100%;
+  z-index: 10;
+}
+
+.nav-item {
+  padding: 0px 1.2em 0px 1.2em;
+  font-size: 1.3em;
+  display: inline-block;
+}
+
+#check-menu,
+label.menu {
+  display: none;
+}
+
+.coverimage {
+  align-items: center;
+}
+
+h2 {
+  /* Estilo para títulos de secciones*/
+  color: green;
+  text-align: center;
+  background-color: rgb(43, 233, 128);
+  padding: 10px 10px;
+}
+
+/* Diferentes colores de fondo para las secciones en index.html"*/
+#Vivero {
+  background-image: url(/media/fondo1.jpeg);
+  background-attachment: fixed;
+}
+
+#Tienda {
+  background-image: url(/media/fondo2.jpeg);
+  background-attachment: fixed;
+}
+
+#Servicios {
+  background-image: url(/media/fondo3.jpeg);
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.icon-serv{
+font-size: xx-large;
+padding-bottom: 10px;
+padding-top: 20px;
+}
+
+#Contacto {
+  background-image: url(/media/fondo4.jpeg);
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.contacto-whatsapp {
+  background-color: white;
+  padding: 6px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.3em;
+  color: rgb(122, 122, 243);
+}
+
+a:active{
+background-color: rgb(129, 233, 190);
+}
+
+a:visited{
+background-color: color: rgb(1, 1, 87);
+}
+
+.boton-inicio {
+  padding: 15px;
+}
+
+footer {
+  height: 5rem;
+}
+
+footer ul {
+  align-items: start;
+  font-size: small;
+}
+
+footer span {
+  width: 40%;
+  font-family: "Dosis";
+  font-weight: lighter;
+  font-size: small;
+  justify-content: end;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.imagenCategorias {
+  border-width: 4px;
+  border-color: rgba(139, 85, 2, 0.548);
+  border-style: groove;
+  border-radius: 5px;
+}
+
+.imagenCategorias:hover {
+  opacity: 40%;
+}
+
+.Contacto-hijo {
+  background-color: white;
+  height: 450px;
+}
+
+.Servicios {
+  width: 30%;
+}
+
+.Servicios p {
+  font-family: "Dosis";
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 945px) {
+  article {
+    flex-direction: row;
+  }
+
+  .imagenCategorias {
+    width: 100%;
+  }
+
+  .Servicios {
+    width: 80%;
+  }
+
+  .contactoMedia {
+    flex-direction: row;
+  }
+  .Contacto-hijo {
+    width: 30%;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  form textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 711px) {
+  .navbar ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 20%;
+    height: 150px;
+    flex-direction: column
+    justify-content: space-around;
+    background-color: rgb(250, 250, 250);
+  }
+
+  label.menu {
+    display: block;
+    font-size: 1.7em;
+    color: lightgreen;
+    cursor: pointer;
+  }
+
+  #check-menu:checked ~ ul {
+    display: block;
+    flex-direction: column;
+  }
+
+  footer span {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .contactoMedia {
+    flex-direction: column;
+    margin: 6px;
+  }
+  .Contacto-hijo {
+    width: 100%;
+  }
+  #Contacto {
+  background-color: rgb(225, 247, 225);
+  height: 1600px;
+  }
+}
+
+@media (max-width: 480px) {
+  article {
+    flex-direction: column;
+    }
+
+.titulo-header { 
+  font-size: 100%;
+}
+  }
+
+@media (max-width: 500px) {
+    .navbar ul {
+    width: 30%;
+  }
+}
+
+@media (max-width: 320px) {
+    .navbar ul {
+    width: 50%;
+  }
+}
