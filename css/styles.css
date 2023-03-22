@@ -322,10 +322,10 @@ h2 {
   text-align: center;
 }
 
-.icon-serv{
-font-size: xx-large;
-padding-bottom: 10px;
-padding-top: 20px;
+.icon-serv {
+  font-size: xx-large;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 #Contacto {
@@ -348,12 +348,12 @@ a:hover {
   color: rgb(122, 122, 243);
 }
 
-a:active{
-background-color: rgb(129, 233, 190);
+a:active {
+  background-color: rgb(129, 233, 190);
 }
 
-a:visited{
-background-color: color: rgb(1, 1, 87);
+a:visited {
+  background-color: rgb(1, 1, 87);
 }
 
 .boton-inicio {
@@ -455,7 +455,7 @@ h3 {
     top: 80px;
     width: 20%;
     height: 150px;
-    flex-direction: column
+    flex-direction: column;
     justify-content: space-around;
     background-color: rgb(250, 250, 250);
   }
@@ -476,7 +476,7 @@ h3 {
     width: 100%;
     text-align: center;
   }
-  
+
   .contactoMedia {
     flex-direction: column;
     margin: 6px;
@@ -485,29 +485,29 @@ h3 {
     width: 100%;
   }
   #Contacto {
-  background-color: rgb(225, 247, 225);
-  height: 1600px;
+    background-color: rgb(225, 247, 225);
+    height: 1600px;
   }
 }
 
 @media (max-width: 480px) {
   article {
     flex-direction: column;
-    }
-
-.titulo-header { 
-  font-size: 100%;
-}
   }
 
+  .titulo-header {
+    font-size: 100%;
+  }
+}
+
 @media (max-width: 500px) {
-    .navbar ul {
+  .navbar ul {
     width: 30%;
   }
 }
 
 @media (max-width: 320px) {
-    .navbar ul {
+  .navbar ul {
     width: 50%;
   }
 }
