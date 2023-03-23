@@ -24,7 +24,7 @@ main {
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 200px 380px 300px;
+  grid-template-rows: 200px 400px 350px;
   grid-template-areas:
     "header header"
     "article1 article2"
@@ -43,10 +43,12 @@ main {
 
 #plantas-de-interior {
   grid-area: article1;
+  display: flex-column;
 }
 
 #plantas-de-exterior {
   grid-area: article2;
+  display: flex-column;
 }
 
 #semillas-y-plantines {
@@ -61,6 +63,7 @@ main {
   display: inline-block;
   flex-direction: column;
   background-color: aliceblue;
+  padding: 20px;
 }
 
 h3 {
@@ -76,7 +79,7 @@ h3 {
 }
 
 div img {
-  width: 100%;
+  width: 80%;
 }
 
 .img-grid {
@@ -113,9 +116,6 @@ p {
       "article3";
     column-gap: 1px;
     row-gap: 1px;
-  }
-  .grid-item {
-height: 90%;
   }
   }
 }

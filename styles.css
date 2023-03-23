@@ -335,7 +335,6 @@ h2 {
   background-image: url(fondo4.jpeg);
   background-attachment: fixed;
   background-repeat: repeat;
-  height: 600px;
 }
 
 .contacto-whatsapp {
@@ -494,6 +493,43 @@ h3 {
   }
 }
 
+@media (max-width: 500px) {
+  .navbar ul {
+    width: 30%;
+  }
+
+  #Vivero {
+    background-image: url(fondo1.jpeg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+  }
+
+  #Tienda {
+    background-image: url(fondo2.jpeg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+  }
+
+  #Servicios {
+    background-image: url(fondo3.jpeg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    text-align: center;
+  }
+
+  .icon-serv {
+    font-size: xx-large;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  #Contacto {
+    background-image: url(fondo4.jpeg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+  }
+}
+
 @media (max-width: 480px) {
   article {
     flex-direction: column;
@@ -501,12 +537,6 @@ h3 {
 
   .titulo-header {
     font-size: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .navbar ul {
-    width: 30%;
   }
 }
 
