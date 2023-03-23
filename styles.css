@@ -514,12 +514,6 @@ h3 {
   .navbar ul {
     width: 30%;
   }
-
-  #Vivero {
-    background-image: url(fondo1.jpeg);
-    background-attachment: fixed;
-    background-repeat: repeat;
-  }
 }
 
 @media (max-width: 480px) {
