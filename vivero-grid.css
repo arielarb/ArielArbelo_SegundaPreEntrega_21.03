@@ -31,9 +31,10 @@ main {
     "side article3";
   column-gap: 3px;
   row-gap: 3px;
+  /* No funcionó la imagen de fondo fija en iOS:
   background-image: url(fondo1.jpeg);
   background-attachment: fixed;
-  background-repeat: repeat;
+  background-repeat: repeat; */
 }
 
 #Vivero {

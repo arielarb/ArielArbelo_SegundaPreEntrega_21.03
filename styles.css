@@ -306,6 +306,23 @@ h2 {
 }
 
 /* Diferentes fondos para las secciones en index.html"*/
+
+#Vivero {
+  background-color: rgb(117, 248, 176);
+}
+
+#Tienda {
+  background-color: rgb(192, 247, 192);
+}
+
+#Servicios {
+  background-color: rgb(207, 247, 207);
+}
+
+#Contacto {
+  background-color: rgb(225, 247, 225);
+}
+/* No funcionó este fondo con imagen fija en iOS:
 #Vivero {
   background-image: url(fondo1.jpeg);
   background-attachment: fixed;
@@ -335,7 +352,7 @@ h2 {
   background-image: url(fondo4.jpeg);
   background-attachment: fixed;
   background-repeat: repeat;
-}
+} */
 
 .contacto-whatsapp {
   background-color: white;
@@ -500,31 +517,6 @@ h3 {
 
   #Vivero {
     background-image: url(fondo1.jpeg);
-    background-attachment: fixed;
-    background-repeat: repeat;
-  }
-
-  #Tienda {
-    background-image: url(fondo2.jpeg);
-    background-attachment: fixed;
-    background-repeat: repeat;
-  }
-
-  #Servicios {
-    background-image: url(fondo3.jpeg);
-    background-attachment: fixed;
-    background-repeat: repeat;
-    text-align: center;
-  }
-
-  .icon-serv {
-    font-size: xx-large;
-    padding-bottom: 10px;
-    padding-top: 20px;
-  }
-
-  #Contacto {
-    background-image: url(fondo4.jpeg);
     background-attachment: fixed;
     background-repeat: repeat;
   }
