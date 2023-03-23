@@ -63,6 +63,7 @@ main {
   flex-direction: column;
   background-color: aliceblue;
   padding: 20px;
+  overflow: scroll;
 }
 
 h3 {
