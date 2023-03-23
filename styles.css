@@ -307,17 +307,17 @@ h2 {
 
 /* Diferentes fondos para las secciones en index.html"*/
 #Vivero {
-  background-image: url(/media/fondo1.jpeg);
+  background-image: url(/fondo1.jpeg);
   background-attachment: fixed;
 }
 
 #Tienda {
-  background-image: url(/media/fondo2.jpeg);
+  background-image: url(/fondo2.jpeg);
   background-attachment: fixed;
 }
 
 #Servicios {
-  background-image: url(/media/fondo3.jpeg);
+  background-image: url(/fondo3.jpeg);
   background-attachment: fixed;
   text-align: center;
 }
@@ -329,7 +329,7 @@ h2 {
 }
 
 #Contacto {
-  background-image: url(/media/fondo4.jpeg);
+  background-image: url(/fondo4.jpeg);
   background-attachment: fixed;
   height: 600px;
 }
