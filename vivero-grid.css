@@ -33,6 +33,7 @@ main {
   row-gap: 3px;
   background-image: url(fondo1.jpeg);
   background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 #Vivero {

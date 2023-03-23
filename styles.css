@@ -309,16 +309,19 @@ h2 {
 #Vivero {
   background-image: url(fondo1.jpeg);
   background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 #Tienda {
   background-image: url(fondo2.jpeg);
   background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 #Servicios {
   background-image: url(fondo3.jpeg);
   background-attachment: fixed;
+  background-repeat: repeat;
   text-align: center;
 }
 
@@ -331,6 +334,7 @@ h2 {
 #Contacto {
   background-image: url(fondo4.jpeg);
   background-attachment: fixed;
+  background-repeat: repeat;
   height: 600px;
 }
 
