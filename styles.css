@@ -322,37 +322,6 @@ h2 {
 #Contacto {
   background-color: rgb(225, 247, 225);
 }
-/* No funcionó este fondo con imagen fija en iOS:
-#Vivero {
-  background-image: url(fondo1.jpeg);
-  background-attachment: fixed;
-  background-repeat: repeat;
-}
-
-#Tienda {
-  background-image: url(fondo2.jpeg);
-  background-attachment: fixed;
-  background-repeat: repeat;
-}
-
-#Servicios {
-  background-image: url(fondo3.jpeg);
-  background-attachment: fixed;
-  background-repeat: repeat;
-  text-align: center;
-}
-
-.icon-serv {
-  font-size: xx-large;
-  padding-bottom: 10px;
-  padding-top: 20px;
-}
-
-#Contacto {
-  background-image: url(fondo4.jpeg);
-  background-attachment: fixed;
-  background-repeat: repeat;
-} */
 
 .contacto-whatsapp {
   background-color: white;
@@ -435,6 +404,13 @@ h3 {
   padding: 15px;
 }
 
+.icon-serv {
+  text-align: center;
+  font-size: xx-large;
+  padding: 5px;
+  margin: 0;
+}
+
 @media (max-width: 945px) {
   article {
     flex-direction: row;
@@ -505,7 +481,6 @@ h3 {
     width: 100%;
   }
   #Contacto {
-    background-color: rgb(225, 247, 225);
     height: 1600px;
   }
 }

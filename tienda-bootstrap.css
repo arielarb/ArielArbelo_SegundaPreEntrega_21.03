@@ -184,10 +184,4 @@ figcaption{
 
 main{
   background-color: rgb(192, 247, 192);
-  /* No funcionó la imagen de fondo fija en iOS: 
-  background-image: url(fondo3.jpeg);
-  background-attachment: fixed; 
-  background-repeat: repeat;
-  column-gap: 20px;
-  row-gap: 20px; */
 }
