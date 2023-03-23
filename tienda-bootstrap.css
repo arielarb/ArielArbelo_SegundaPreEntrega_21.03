@@ -183,7 +183,7 @@ figcaption{
 }
 
 main{
-  background-image: url(/media/fondo3.jpeg);
+  background-image: url(fondo3.jpeg);
   background-attachment: fixed; 
   background-repeat: repeat;
   column-gap: 20px;
