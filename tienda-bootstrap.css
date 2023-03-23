@@ -12,12 +12,12 @@ html {
 
 @font-face {
   font-family: "Pompiere";
-  src: url("/fonts/Pompiere-Regular.ttf");
+  src: url("Pompiere-Regular.ttf");
 }
 
 @font-face {
   font-family: "Dosis";
-  src: url("/fonts/Dosis-VariableFont_wght.ttf");
+  src: url("Dosis-VariableFont_wght.ttf");
 }
 
 body {
