@@ -305,7 +305,8 @@ h2 {
   padding: 10px 10px;
 }
 
-/* Diferentes fondos para las secciones en index.html"*/
+/* Diferentes fondos para las secciones en index.html
+Intenté colocar imagenes de fondo con propiedad fixed y repeated, pero el sistema iOS en diferentes dispositivos (iPhone, iPad) no reconocían esta configuración, y se veía una imagen sin movimiento al scrollear y al repetirse hacía saltos, por lo que tuve que volver a colocar el fondo de color plano"*/
 
 #Vivero {
   background-color: rgb(117, 248, 176);
