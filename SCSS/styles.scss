@@ -1,0 +1,36 @@
+* {
+  /* estilos genericos */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Pompiere";
+  src: url("Pompiere-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("Dosis-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "Pompiere";
+}
+
+.titulo-header {
+  /* Estilo para slogan del comercio "todo para tu jardín, en un solo lugar"*/
+  color: green;
+  text-align: center;
+  font-size: x-large;
+  font-style: italic;
+  background-color: rgb(250, 250, 250);
+  padding: 15px;
+  font-family: "Dosis";
+}

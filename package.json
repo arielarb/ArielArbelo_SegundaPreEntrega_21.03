@@ -1,0 +1,20 @@
+{
+  "name": "ariel-arbelo---segunda-entrega---14.03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arielarb/ArielArbelo_SegundaPreEntrega_21.03.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arielarb/ArielArbelo_SegundaPreEntrega_21.03/issues"
+  },
+  "homepage": "https://github.com/arielarb/ArielArbelo_SegundaPreEntrega_21.03#readme"
+}
