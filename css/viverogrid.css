@@ -1,0 +1,128 @@
+#Vivero p {
+  text-align: center;
+  font-size: larger;
+  margin: 10px;
+}
+
+#Vivero {
+  padding-bottom: 3%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Color de fondo. 
+Intenté colocar imagenes de fondo con propiedad fixed y repeated, pero el sistema iOS en diferentes dispositivos (iPhone, iPad) no reconocían esta configuración, y se veía una imagen sin movimiento al scrollear y al repetirse hacía saltos, por lo que tuve que volver a colocar el fondo de color plano"*/
+main {
+  background-color: rgb(117, 248, 176);
+}
+
+.aviso {
+  background-color: rgb(2, 92, 2);
+  color: white;
+  padding: 4px;
+  border-radius: 3px;
+  border: 3px solid;
+  border-color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 200px 400px 350px;
+  grid-template-areas:
+    "header header"
+    "article1 article2"
+    "side article3";
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+#Vivero {
+  grid-area: header;
+  display: flex-column;
+}
+
+#plantas-de-interior {
+  grid-area: article1;
+  display: flex-column;
+}
+
+#plantas-de-exterior {
+  grid-area: article2;
+  display: flex-column;
+}
+
+#semillas-y-plantines {
+  grid-area: side;
+}
+
+#fertilizantes-y-otro-insumos {
+  grid-area: article3;
+}
+
+.grid-item {
+  display: inline-block;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 20px;
+  overflow: scroll;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: x-large;
+}
+
+#plantas-de-exterior,
+#plantas-de-interior {
+  text-align: center;
+}
+
+div img {
+  width: 80%;
+}
+
+.img-grid {
+  border-width: 4px;
+  border-color: rgba(139, 85, 2, 0.548);
+  border-style: groove;
+  border-radius: 5px;
+  width: 70%;
+  margin: 10px;
+  align-items: center;
+}
+
+@media (max-width: 735px) {
+  .grid-container {
+    grid-template-rows: 250px 300px 450px;
+    column-gap: 2px;
+    row-gap: 2px;
+  }
+}
+
+@media (max-width: 420px) {
+  .grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 300px 300px 380px 300px;
+    grid-template-areas:
+      "header"
+      "article1"
+      "article2"
+      "side"
+      "article3";
+    column-gap: 1px;
+    row-gap: 1px;
+  }
+  }
+}
+
+@media (max-width: 342px) {
+  .grid-container {
+    grid-template-rows: 360px 300px 300px 450px 400px;
+  }
+
+  header {
+    font-size: small;
+  }
+}
