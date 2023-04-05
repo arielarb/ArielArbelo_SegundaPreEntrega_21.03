@@ -32,7 +32,7 @@
   }
 }
 
-@media (max-width: 711px) {
+@media (max-width: 720px) {
   .navbar ul {
     display: none;
     position: absolute;
@@ -60,7 +60,9 @@
     width: 100%;
     text-align: center;
   }
+}
 
+@media (max-width: 711px) {
   .contactoMedia {
     flex-direction: column;
     margin: 6px;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap");
 * {
   /* estilos genericos */
   margin: 0;
@@ -10,22 +11,8 @@ html {
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: "Pompiere";
-  src: url("/fonts/Pompiere-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Dosis";
-  src: url("/fonts/Dosis-VariableFont_wght.ttf");
-}
-
 body {
-  font-family: "Pompiere";
-}
-
-.col p, p, figcaption {
-  font-family: "Dosis";
+  font-family: "Josefin Sans", sans-serif;
 }
 
 main{
@@ -98,7 +85,7 @@ footer ul {
 
 footer span {
   width: 40%;
-  font-family: "Dosis";
+  font-family: "Josefin Sans", sans-serif;
   font-weight: lighter;
   font-size: small;
   justify-content: end;
@@ -211,7 +198,7 @@ header {
 
 .side {
   grid-area: side;
-  font-family: "Dosis";
+  font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
 }
 
