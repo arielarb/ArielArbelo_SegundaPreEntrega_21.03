@@ -1,10 +1,10 @@
-#Vivero p {
+#vivero p {
   text-align: center;
   font-size: larger;
   margin: 10px;
 }
 
-#Vivero {
+#vivero {
   padding-bottom: 3%;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -36,7 +36,7 @@ main {
   row-gap: 3px;
 }
 
-#Vivero {
+#vivero {
   grid-area: header;
   display: flex-column;
 }

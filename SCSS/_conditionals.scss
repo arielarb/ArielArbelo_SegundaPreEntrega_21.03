@@ -1,0 +1,15 @@
+$navbar-color: "standard";
+
+@if ($navbar-color == "standard") {
+  .navbar {
+    background-color: rgba(250, 238, 238, 0.979);
+  }
+} @else if ($navbar-color == "blue") {
+  .navbar {
+    background-color: rgba(93, 173, 226, 0.966);
+  }
+} @else if ($navbar-color == "red") {
+  .navbar {
+    background-color: rgba(231, 75, 75, 0.966);
+  }
+}
