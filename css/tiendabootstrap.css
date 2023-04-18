@@ -48,6 +48,9 @@ label.menu {
   display: none;
 }
 
+.intro{
+  padding: 20px;
+}
 
 h2 {
   /* Estilo para títulos de secciones*/
@@ -113,7 +116,7 @@ h3, h4 {
 }
 
 .imagenCategorias {
-  width: 80%;
+  width: 60%;
   }
 
 @media (max-width: 711px) {

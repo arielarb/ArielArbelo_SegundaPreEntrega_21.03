@@ -11,8 +11,12 @@
     name="keywords"
     content="Vivero, jardin, tienda de jardineria, tienda online, Corrientes, Curuzu Cuatia, Plantas interior, Pantas exterior, Plantines, Semillas, Macetas, Decoración, Herramientas de jardin, Fertilizantes, Asesoramiento,  Paisajismo."/>
     <link rel="icon" href="media/logo.PNG" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+     <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css">
     <title>La Chichy | Vivero y Tienda de Jardinería</title>
   </head>
 
@@ -62,30 +66,30 @@
       <h2><a href="vivero.html">Vivero</a></h2>
       <article>
         <div>
-          <a href="vivero.html#plantas-de-interior"><img src="media/plantas interior.jpg" alt="plantas-de-interior" class="imagenCategorias"/></a>
+          <a href="vivero.html#plantas-de-interior"><img src="media/plantas interior.jpg" alt="plantas-de-interior" class="imagenCategorias" data-aos="fade-right"/></a>
           <h3><a href="vivero.html#plantas-de-interior">Plantas de interior</a></h3>
-          <a href="vivero.html#plantas-de-exterior"><img src="media/plantas exterior.jpg" alt="plantas-de-exterior" class="imagenCategorias"/></a>
+          <a href="vivero.html#plantas-de-exterior"><img src="media/plantas exterior.jpg" alt="plantas-de-exterior" class="imagenCategorias" data-aos="fade-right"/></a>
           <h3><a href="vivero.html#plantas-de-exterior">Plantas de exterior</a></h3>
         </div>
         <div>
-          <a href="vivero.html#semillas-y-plantines"><img src="media/semillas y plantines.jpeg" alt="semillas-y-plantines" class="imagenCategorias"/></a>
+          <a href="vivero.html#semillas-y-plantines"><img src="media/semillas y plantines.jpeg" alt="semillas-y-plantines" class="imagenCategorias" data-aos="fade-left"/></a>
           <h3><a href="vivero.html#semillas-y-plantines">Semillas y plantines</a></h3>
-          <a href="vivero.html#fertilizantes-y-otro-insumos"><img src="media/fertilizantes y otros insumos.jpg" alt="fertilizantes-y-otros-insumos" class="imagenCategorias"/></a>
+          <a href="vivero.html#fertilizantes-y-otro-insumos"><img src="media/fertilizantes y otros insumos.jpg" alt="fertilizantes-y-otros-insumos" class="imagenCategorias" data-aos="fade-left"/></a>
           <h3><a href="vivero.html#fertilizantes-y-otro-insumos">Fertilizantes y otros insumos</a></h3>
         </div>
       </article>
-      <article class="boton-inicio"><a href="index.html#inicio">🔼 Inicio</a></article>
+      <article class="boton-inicio animate__animated animate__lightSpeedInLeft"><a href="index.html#inicio">🔼 Inicio</a></article>
     </section>
 
     <section id="tienda"> <!--Segunda de las 4 secciones en index.html - Sus links dirigen a la página tienda.html y a IDs dentro de esta página -->
       <h2><a href="tienda.html">Tienda</a></h2>
       <article>
         <div>
-          <a href="tienda.html#decoracion"><img src="media/decoracion.jpg" alt="decoracion" class="imagenCategorias" /></a>
+          <a data-aos="fade-left" href="tienda.html#decoracion"><img src="media/decoracion.jpg" alt="decoracion" class="imagenCategorias"/></a>
           <h3><a href="tienda.html#decoracion">Decoración</a></h3>
         </div> 
         <div>
-          <a href="tienda.html#herramientas"><img src="media/herramientas.jpg" alt="herramientas" class="imagenCategorias"></a>
+          <a data-aos="fade-right" href="tienda.html#herramientas"><img src="media/herramientas.jpg" alt="herramientas" class="imagenCategorias"/></a>
           <h3><a href="tienda.html#herramientas">Herramientas</h3></a>
         </div>
       </article>
@@ -173,7 +177,7 @@
           </form>
           <br>
           <span class="contacto-whatsapp">
-            <a href="https://wa.me/00543774442756"><img src="logo whatsapp.jpg" alt="logo de whatsapp" width="20"> <b> +5493774442756</b></a>
+            <a href="https://wa.me/00543774442756"><img src="media/logo whatsapp.jpg" alt="logo de whatsapp" width="20"> <b> +5493774442756</b></a>
           </span>
         </div>
       </article>
@@ -191,5 +195,9 @@
       <span>Ruta 119, km. 32.2, C.P.: 3460 | Curuzú Cuatiá, Corrientes, Argentina. <br>2023 Vivero La Chichy. All Rights Reserved </span>
     </footer>
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

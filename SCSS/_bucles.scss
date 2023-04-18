@@ -3,3 +3,15 @@
     font-size: 25px + $i;
   }
 }
+
+@each $color in lightgrey, lightpink, pink, grey {
+  .#{$color} {
+    background-color: $color;
+  }
+}
+
+@each $color in white, black {
+  .#{$color} {
+    color: $color;
+  }
+}

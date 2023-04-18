@@ -4,7 +4,6 @@
 @import "conditionals";
 @import "bucles";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap");
-@import "queries";
 
 $Font-title: bolder, "Josefin Sans", sans-serif;
 $Font-paragraph: lighter, "Josefin Sans", sans-serif;
@@ -58,11 +57,11 @@ body {
     font-size: 1.3em;
     display: inline-block;
   }
+}
 
-  #check-menu,
-  label.menu {
-    display: none;
-  }
+#check-menu,
+label.menu {
+  display: none;
 }
 
 .titulo-header {
@@ -70,12 +69,13 @@ body {
     tu jardín,
   en un solo lugar
     "*/
-  color: green;
+  color: darkgreen;
   text-align: center;
   font-size: x-large;
   font-style: italic;
   background-color: rgb(250, 250, 250);
-  padding: $tamano-gral + 5;
+  background-image: radial-gradient(ellipse 1500px 200px, white, darkgreen);
+  padding: $tamano-gral + 10;
   font-family: $Font-title;
 }
 
@@ -137,7 +137,7 @@ Intenté colocar imagenes de fondo con propiedad fixed y repeated, pero el siste
 
   .contacto-hijo {
     background-color: white;
-    height: 450px;
+    height: 500px;
   }
 }
 
@@ -174,38 +174,39 @@ article {
   border-color: rgba(139, 85, 2, 0.548);
   border-style: groove;
   border-radius: 5px;
+  transition: width 0.5s ease;
 
   &:hover {
     opacity: 40%;
+    width: 103%;
   }
 }
 
-@media (max-width: 720px) {
-  .navbar ul {
-    display: none;
-    position: absolute;
-    top: 80px;
-    width: 20%;
-    height: 150px;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: rgb(250, 250, 250);
-  }
+.grid-item {
+  display: inline-block;
+  flex-direction: column;
+  /* background-color: aliceblue; */
+  padding: 20px;
+  height: fit-content;
+  /* overflow: scroll; */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
 
-  label.menu {
-    display: block;
-    font-size: 1.7em;
-    color: lightgreen;
-    cursor: pointer;
-  }
+.aviso {
+  @extend .grid-item;
+  background-color: rgb(2, 92, 2);
+  color: white;
+  border-radius: 3px;
+  border: 3px solid;
+  border-color: black;
+  margin-bottom: 0%;
+  margin-top: 2%;
+}
 
-  #check-menu:checked ~ ul {
-    display: block;
-    flex-direction: column;
-  }
-
-  footer span {
-    width: 100%;
-    text-align: center;
-  }
+.introvivero {
+  @extend .grid-item;
+  text-align: center;
+  box-shadow: none;
+  width: 100%;
+  padding-bottom: 0%;
 }

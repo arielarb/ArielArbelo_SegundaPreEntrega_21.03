@@ -2,7 +2,7 @@ $navbar-color: "standard";
 
 @if ($navbar-color == "standard") {
   .navbar {
-    background-color: rgba(250, 238, 238, 0.979);
+    background-color: rgba(250, 238, 238, 0.9);
   }
 } @else if ($navbar-color == "blue") {
   .navbar {
