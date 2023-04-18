@@ -6,7 +6,7 @@
 
 #vivero {
   padding-bottom: 3%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /* Color de fondo. 
@@ -23,6 +23,10 @@ main {
   border: 3px solid;
   border-color: black;
 } */
+
+main {
+   height: 1200px;
+}
 
 .grid-container {
   display: grid;
@@ -59,63 +63,59 @@ main {
   grid-area: article3;
 }
 
-/* .grid-item {
-  display: inline-block;
-  flex-direction: column;
-  /* background-color: aliceblue; */
-  /* padding: 20px;
-  height: fit-content; */
-  /* overflow: scroll; */
-  /* box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
-} */ 
-
-h3 {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  font-size: x-large;
-}
-
-#plantas-de-exterior,
-#plantas-de-interior {
-  text-align: center;
-}
-
-div img {
-  width: 80%;
-}
-
-.img-grid {
-  border-width: 4px;
-  border-color: rgba(139, 85, 2, 0.548);
-  border-style: groove;
-  border-radius: 5px;
-  width: 70%;
-  margin: 10px;
-  align-items: center;
-}
-
-@media (max-width: 735px) {
-  .grid-container {
-    grid-template-rows: 250px 300px 450px;
-    column-gap: 2px;
-    row-gap: 2px;
+  h3 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: x-large;
   }
-}
 
-@media (max-width: 420px) {
-  .grid-container {
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 300px 300px 380px 300px;
-    grid-template-areas:
-      "header"
-      "article1"
-      "article2"
-      "side"
-      "article3";
-    column-gap: 1px;
-    row-gap: 1px;
+  #plantas-de-exterior,
+  #plantas-de-interior {
+    text-align: center;
   }
+
+  div img {
+    width: 80%;
+  }
+
+  .img-grid {
+    border-width: 4px;
+    border-color: rgba(139, 85, 2, 0.548);
+    border-style: groove;
+    border-radius: 5px;
+    width: 70%;
+    margin: 10px;
+    align-items: center;
+  }
+
+  @media (max-width: 735px) {
+    .grid-container {
+      grid-template-rows: 300px 500px 600px;
+      column-gap: 2px;
+      row-gap: 2px;
+    }
+    main {
+      height: 1800px;
+    }
+  }
+
+  @media (max-width: 490px) {
+    .grid-container {
+      grid-template-columns: 100%;
+      grid-template-rows: 300px 400px 400px 500px 400px;
+      grid-template-areas:
+        "header"
+        "article1"
+        "article2"
+        "side"
+        "article3";
+      column-gap: 1px;
+      row-gap: 1px;
+    }
+    main {
+      height: 2000px;
+    }
   }
 }
 
