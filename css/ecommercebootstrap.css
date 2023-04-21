@@ -28,8 +28,9 @@ main{
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
-  background-color: rgb(250, 250, 250);
+  background-color: rgba(250, 238, 238, 0.9);
   opacity: 100%;
+  z-index: 10;
 }
 
 .nav-item {
@@ -48,18 +49,21 @@ h2 {
   /* Estilo para títulos de secciones*/
   color: green;
   text-align: center;
+  font-weight: bold;
   background-color: rgb(43, 233, 128);
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 0%;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
-  font-size: 1.3em;
-  color: rgb(122, 122, 243);
+  font-size: 1.1em;
+  /* color: rgb(122, 122, 243); */
 }
 
 a:active{
@@ -67,7 +71,7 @@ background-color: rgb(129, 233, 190);
 }
 
 a:visited{
-background-color: color: rgb(1, 1, 87);
+background-color: rgb(1, 1, 87);
 }
 
 .boton-inicio {
@@ -91,10 +95,26 @@ footer span {
   justify-content: end;
 }
 
-h3, h4 {
+h4 {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 5px;
+  padding: 5px;
+  font-weight: bold;
+  background-color: rgb(146, 201, 146);
+  margin: 10px 5px;
+  border-radius: 5px;
+}
+
+#macetasDeCemento, #macetasDeTerracota, #macetasDePlastico, #macetasImpresas3D {
+  background-color: rgb(230, 182, 240);
+}
+
+#lucesIndirectas, #lucesDirectas, #tiraDeLuces, #antorchas {
+  background-color: rgb(140, 149, 212);
+}
+
+
+#tijerasDePoda, #guantesDeJardineria, #palas, #otrosElementos {
+  background-color: rgb(118, 126, 184);
 }
 
 .imagenCategorias {
@@ -112,7 +132,131 @@ h3, h4 {
     width: 80%;
   }
 
-@media (max-width: 711px) {
+.col {
+  display: inline-block;
+  text-align: center;
+}
+
+.row {
+   display: flex;
+   justify-content: space-around;
+}
+
+figcaption{
+  font-size: medium;
+}
+
+main{
+  background-color: rgb(192, 247, 192);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.grid-container {
+  display: grid;
+  text-align: center;
+  padding: 20px 100px 20px 200px;
+  grid-template-columns: 15% 33% 33%;
+  grid-template-rows: repeat(10, 80px);
+  grid-template-areas:
+    "side container container"
+    "side container container"
+    "side container container"
+    "side container container"
+    "side container container"
+    "side container container"
+    "side container container"
+    "side container container"
+    "side container container"
+    "side container container";
+  column-gap: 5px;
+  row-gap: 5px;
+  width: auto;
+  height: auto;
+  scroll-behavior: smooth;
+}
+
+header {
+  grid-area: header;
+  display: flex-column;
+}
+
+article.row {
+  margin: 0%;
+}
+
+.side {
+  grid-area: side;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+
+.side-item{
+  border-radius: 3px;
+  margin: 3px;
+}
+
+.card{
+  margin: 15px;
+  align-self: center;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item div:nth-child(1){
+  background-color: rgb(230, 182, 240);
+}
+.grid-item div:nth-child(2){
+  background-color: rgb(230, 182, 240);
+}
+.grid-item div:nth-child(3){
+  background-color: rgb(230, 182, 240);
+}
+.grid-item div:nth-child(4){
+  background-color: rgb(230, 182, 240);
+}
+.grid-item div:nth-child(5){
+  background-color: rgb(140, 149, 212);
+}
+.grid-item div:nth-child(6){
+  background-color: rgb(140, 149, 212);
+}
+.grid-item div:nth-child(7){
+  background-color: rgb(140, 149, 212);
+}
+.grid-item div:nth-child(8){
+  background-color: rgb(140, 149, 212);
+}
+.grid-item div:nth-child(9){
+  background-color: rgb(118, 126, 184);
+}
+.grid-item div:nth-child(10){
+  background-color: rgb(118, 126, 184);
+}
+.grid-item div:nth-child(11){
+  background-color: rgb(118, 126, 184);
+}
+.grid-item div:nth-child(12){
+  background-color: rgb(118, 126, 184);
+}
+
+.container {
+  grid-area: container;
+  background-color: aliceblue;
+  overflow-y: scroll;
+}
+
+div {
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .grid-container {
+    padding: 20px 30px 20px 100px;
+  }
+}
+
+@media (max-width: 753px) {
   .navbar ul {
     display: none;
     position: absolute;
@@ -122,6 +266,10 @@ h3, h4 {
     flex-direction: column
     justify-content: space-around;
     background-color: rgb(250, 250, 250);
+  }
+
+  .navbar ul {
+    font-size: 1em;
   }
 
   label.menu {
@@ -140,11 +288,26 @@ h3, h4 {
     width: 100%;
     text-align: center;
   }
+
+  .side-item {
+    width: 100px;
+    align-content: center;
+    text-size-adjust:unset;
+  }
+
+  .grid-container {
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: 25% 50% 25%;
+  }
 }
 
 @media (max-width: 500px) {
     .navbar ul {
     width: 40%;
+  }
+    .grid-container {
+    padding: 5px;
+    grid-template-columns: 25% 50% 25%;
   }
 }
 
@@ -152,100 +315,4 @@ h3, h4 {
     .navbar ul {
     width: 70%;
   }
-}
-
-.col {
-  display: inline-block;
-  text-align: center;
-}
-
-figcaption{
-  font-size: medium;
-}
-
-main{
-  background-color: rgb(192, 247, 192);
-  column-gap: 20px;
-  row-gap: 20px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 20% 40% 40%;
-  grid-template-rows: 60px repeat(12, 80px);
-  grid-template-areas:
-    "header header header"
-    "side container container"
-    "side container container"
-    "side container container"
-    "side container container"
-    "side container container"
-    "side container container"
-    "side container container"
-    "side container container"
-    "side container container"
-    "side container container"
-    "side container container"
-    "side container container";
-  column-gap: 5px;
-  row-gap: 5px;
-}
-
-header {
-  grid-area: header;
-  display: flex-column;
-}
-
-.side {
-  grid-area: side;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: bold;
-}
-
-.grid-item div:nth-child(1){
-  background-color: rgb(237, 163, 252);
-}
-.grid-item div:nth-child(2){
-  background-color: rgb(237, 163, 252);
-}
-.grid-item div:nth-child(3){
-  background-color: rgb(237, 163, 252);
-}
-.grid-item div:nth-child(4){
-  background-color: rgb(237, 163, 252);
-}
-.grid-item div:nth-child(5){
-  background-color: rgb(93, 102, 184);
-}
-.grid-item div:nth-child(6){
-  background-color: rgb(93, 102, 184);
-}
-.grid-item div:nth-child(7){
-  background-color: rgb(93, 102, 184);
-}
-.grid-item div:nth-child(8){
-  background-color: rgb(93, 102, 184);
-}
-.grid-item div:nth-child(9){
-  background-color: rgb(184, 93, 108);
-}
-.grid-item div:nth-child(10){
-  background-color: rgb(184, 93, 108);
-}
-.grid-item div:nth-child(11){
-  background-color: rgb(184, 93, 108);
-}
-.grid-item div:nth-child(12){
-  background-color: rgb(184, 93, 108);
-}
-
-
-.container {
-  grid-area: container;
-}
-
-div {
-  align-items: center;
-  text-align: center;
-  border: solid;
 }

@@ -18,7 +18,6 @@ main{
   margin: 0;
 }
 
-
 div {
   align-items: center;
   text-align: center;
@@ -32,7 +31,7 @@ div {
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
-  background-color: rgb(250, 250, 250);
+  background-color: rgba(250, 238, 238, 0.9);
   opacity: 100%;
   z-index: 10;
 }
@@ -41,6 +40,7 @@ div {
   padding: 0px 1.2em 0px 1.2em;
   font-size: 1.3em;
   display: inline-block;
+  color: rgb(122, 122, 243);
 }
 
 #check-menu,
@@ -63,6 +63,11 @@ h2 {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+a .nav-item {
+   color: rgb(122, 122, 243);
 }
 
 a:hover {
@@ -98,7 +103,7 @@ footer span {
   justify-content: end;
 }
 
-h3, h4 {
+h3, h4, h5 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 5px;
@@ -112,32 +117,46 @@ h3, h4 {
 }
 
 .imagenCategorias:hover {
-  opacity: 40%;
+  opacity: 30%;
+  width: 63%;
 }
+
 
 .imagenCategorias {
   width: 60%;
   }
 
-@media (max-width: 711px) {
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 753px) {
   .navbar ul {
     display: none;
     position: absolute;
     top: 80px;
-    width: 30%;
+    width: 25%;
     height: 150px;
-    flex-direction: column
+    flex-direction: column;
     justify-content: space-around;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(250, 238, 238, 0.9);
   }
-  
+
+  .navbar ul li {
+    margin: 3px;
+    font-size: 1em;
+  }
+
   label.menu {
     display: block;
     font-size: 1.7em;
     color: lightgreen;
     cursor: pointer;
   }
-  
+
   #check-menu:checked ~ ul {
     display: block;
     flex-direction: column;
@@ -146,6 +165,10 @@ h3, h4 {
   footer span {
     width: 100%;
     text-align: center;
+  }
+
+  .imagenCategorias {
+  width: 80%;
   }
 }
 

@@ -39,6 +39,13 @@ body {
   }
 }
 
+.viverodiv {
+  div {
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+  }
+}
+
 .navbar {
   display: flex;
   position: sticky;
@@ -138,6 +145,16 @@ Intenté colocar imagenes de fondo con propiedad fixed y repeated, pero el siste
   .contacto-hijo {
     background-color: white;
     height: auto;
+  }
+
+  .contacto-form {
+    height: 473px;
+
+    & input,
+    textarea {
+      margin: 3px;
+      width: 290px;
+    }
   }
 }
 

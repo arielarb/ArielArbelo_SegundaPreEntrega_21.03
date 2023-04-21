@@ -103,7 +103,7 @@ main {
   @media (max-width: 490px) {
     .grid-container {
       grid-template-columns: 100%;
-      grid-template-rows: 300px 400px 400px 500px 400px;
+      grid-template-rows: 300px 400px 400px 400px 400px;
       grid-template-areas:
         "header"
         "article1"
@@ -119,9 +119,9 @@ main {
   }
 }
 
-@media (max-width: 342px) {
+@media (max-width: 362px) {
   .grid-container {
-    grid-template-rows: 360px 300px 300px 450px 400px;
+    grid-template-rows: 360px 300px 600px 600px 400px;
   }
 
   header {
